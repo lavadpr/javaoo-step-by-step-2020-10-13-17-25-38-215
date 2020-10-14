@@ -13,7 +13,8 @@ public class Teacher extends Person{
     }
 
     public String introduce(){
-        return klass != 0 ? super.introduce() + " I am a Teacher. I teach Class " + klass + "." : super.introduce() + " I am a Teacher. I teach No Class.";
+        String teacherIntroduction = " I am a Teacher. ";
+        return klass != 0 ? super.introduce() + teacherIntroduction + "I teach Class " + klass + "." : super.introduce() + teacherIntroduction + "I teach No Class.";
     }
     public int getKlass() {
         return klass;
